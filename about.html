@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="top">
+        <ul>
+            <li><a href="#">Supersmall Games</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        
+            <img src="other/Placeholder.png" height="80vh">
+            <div class="overlay">
+                <h1>How did we do it?</h1>
+            </div>
+    </nav>
+        
+    <div class="document">
+        <a href="other/Eichert_Marek_2L_ZadaniProjektu.docx" download>This Is How</a>
+    </div>
+
+    <div class="FAQ">
+        <h1>FaQs</h1>
+        <div class="faq">
+            <div class="question">Q: What is Lorem Ipsum?</div>
+            <div class="answer">A: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+        
+        <div class="faq">
+            <div class="question">Q: Why do we use it?</div>
+            <div class="answer">A: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+        </div>
+        
+        <div class="faq">
+            <div class="question">Q: Where does it come from?</div>
+            <div class="answer">A: Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <p>Supersmall Games</p>
+        <p>Email: </p>
+        <a href="mailto:info@supersmallgames.com">info@supersmallgames.com</a>
+        <p>Midknight is Not © Copyright 2024 Supersmall Games Inc.</p>
+    </footer>
+
+    <script>
+        // Add event listeners to questions to toggle answers
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
