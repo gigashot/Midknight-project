@@ -1,14 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* most important... somehow fixes horizontal scrollbars*/
+    box-sizing: border-box; /* most important... somehow fixes horizontal scrollbars */
 }
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden; /* Hide horizontal overflow */
-    background-image: "images\Placeholder.png";
 
+body {
+    font-family: "Sedan SC";
+    overflow-x: hidden; /* Hide horizontal overflow */
+    background-color: #222034;
+    color: #959595;
 }
+
+p {
+    font-size: 1.3em;
+    padding: 2%;
+}
+
 nav {
     position: relative; /* Position the nav element */
 }
@@ -32,12 +39,13 @@ nav li {
     padding: 0 30px; /* Add padding on both sides */
     margin: 0; /* Remove any margin */
 }
+
 nav a {
     height: 100%;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #c0c5a5ff;
 }
 
 nav a:hover {
@@ -49,56 +57,68 @@ nav li:first-child {
 }
 
 nav img {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
+
 .overlay {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 2em;
-    
+}
+.overlay h1 {
+    font-size: 5em;
+    color: #959595;
 }
 
 .grid-item {
     padding: 5% 3% 5% 3%;
 }
-.grid-container-2{
+
+.grid-container-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
-    padding-top: 5vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    gap: 2%;
+    padding: 2%;
+    place-items: center;
+}
+
+.grid-container-2 h1 {
+    font-size: 2em;
+}
+
+.grid-container h1 {
+    font-size: 2em;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2vw; 
-    padding-top: 5vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-}
-footer {
-    width: 100%;
-    
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
+    gap: 2%;
+    padding: 2%;
+    place-items: center;
 }
 
-.grid-container-2{
+footer {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #959595;
+}
+
+.grid-container-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
     padding-top: 5vh;
     padding-left: 2vh;
     padding-right: 2vh;
+    font-size: 1em;
 }
+
 .video-container {
     margin-top: 5vh;
     position: relative;
@@ -114,63 +134,86 @@ footer {
     width: 100%;
     height: 100%;
 }
-.document{
+
+.document {
     padding: 5vh;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-
 }
-.FAQ{
+
+.FAQ {
     text-align: center;
     border: 5px solid black;
     width: 100%;
 }
+
 .question {
-    background-color: rgb(128, 191, 240);
+    background-color: #432547;
     padding: 5%;
     cursor: pointer;
     border-top: 2px solid black;
     text-align: center;
     font-weight: bold;
 }
+
 .answer {
     display: none;
-    background-color: lightcoral;
+    background-color: #85426f;
     padding: 5%;
     border-top: 2px solid black;
     text-align: center;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .video-container {
-        padding-bottom:  56.25%; /* udržení aspect-ratia*/
+        padding-bottom: 56.25%; /* udržení aspect-ratia */
     }
-}
-@media (max-width: 768px) {
+    
     ul img {
-      width: auto; 
-      max-width: 100%; /* Prevent images from overflowing their container(toto taky fixuje border box) */
+        width: auto; 
+        max-width: 100%; /* Prevent images from overflowing their container(toto taky fixuje border box) */
     }
-  }
-@media screen and (max-width: 768px){
-    .grid-container{
+    
+    nav a {
+        color: #959595;
+        background-color: #3a3244ff;
+    }
+    
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr;
     }
-}
-@media screen and (max-width: 768px) {
+    
     .grid-container-2 {
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    .grid-item-text {
-        order: 2; /* změní pozici boxu s texten na 2*/
+    
+    .grid-container h1 {
+        font-size: 2.5em;
     }
-
+    
+    .grid-container-2 h1 {
+        font-size: 2.5em;
+    }
+    
+    .grid-container-2 p {
+        font-size: 0.8em;
+    }
+    .grid-container-2 p {
+        font-size: 0.8em;
+    }
+    
+    .overlay h1 {
+        font-size: 3em;
+    }
+    
+    .grid-item-text {
+        order: 2; /* změní pozici boxu s texten na 2 */
+    }
+    
     .grid-item-image {
         order: 1; /* změní pozici boxu s obrázkem na 1 */
     }
