@@ -86,10 +86,12 @@ nav img {
 }
 
 .grid-container-2 h1 {
+    color: #c0c5a5ff;
     font-size: 2em;
 }
 
 .grid-container h1 {
+    color: #c0c5a5ff;
     font-size: 2em;
 }
 
@@ -107,6 +109,11 @@ footer {
     text-align: center;
     text-decoration: none;
     color: #959595;
+    background-color: #0c0f1f;
+    font-size: 0.8em;
+}
+footer div {
+    padding: 1%;
 }
 
 .grid-container-2 {
@@ -155,6 +162,7 @@ footer {
     border-top: 2px solid black;
     text-align: center;
     font-weight: bold;
+    color: #c0c5a5ff;
 }
 
 .answer {
@@ -193,17 +201,19 @@ footer {
     
     .grid-container h1 {
         font-size: 2.5em;
+        color: #c0c5a5ff;
     }
     
     .grid-container-2 h1 {
         font-size: 2.5em;
+        color: #c0c5a5ff;
     }
     
-    .grid-container-2 p {
-        font-size: 0.8em;
+    .grid-container p {
+        font-size: 1em;
     }
     .grid-container-2 p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     .overlay h1 {
