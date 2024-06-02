@@ -91,6 +91,9 @@ nav img {
 
     position: fixed;
 }
+.castle{
+    margin-bottom: -5px;
+}
 
 .grid-item {
     padding: 5% 3% 5% 3%;
